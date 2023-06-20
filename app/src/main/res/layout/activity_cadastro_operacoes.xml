@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroOperacoes">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3B3E38"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <EditText
+            android:id="@+id/etQuantidade"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="number"
+            android:shadowColor="#FFC107"
+            android:text="Quantidade"
+            android:textAlignment="center"
+            android:textColor="#FFC107"
+            android:textSize="14dp"
+            app:layout_constraintStart_toEndOf="@+id/etAtivo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewApp2" />
+
+        <EditText
+            android:id="@+id/etValor"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:shadowColor="#FFC107"
+            android:text="Valor"
+            android:textAlignment="center"
+            android:textColor="#FFC107"
+            android:textSize="14dp"
+            app:layout_constraintStart_toEndOf="@+id/etQuantidade"
+            app:layout_constraintTop_toBottomOf="@+id/textViewApp2" />
+
+        <EditText
+            android:id="@+id/etData"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="date"
+            android:shadowColor="#FFC107"
+            android:text="Data"
+            android:textAlignment="center"
+            android:textColor="#FFC107"
+            android:textSize="14dp"
+            app:layout_constraintStart_toEndOf="@+id/etValor"
+            app:layout_constraintTop_toBottomOf="@+id/textViewApp2" />
+
+        <TextView
+            android:id="@+id/tvOperacoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="164dp"
+            android:text="Operações"
+            android:textColor="#FFC107"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewApp2" />
+
+        <TextView
+            android:id="@+id/textViewApp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Carteira de Operações"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FF9800"
+            android:textColorHighlight="#F8F8F8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TableLayout
+            android:id="@+id/tabelaOperacoes"
+            android:layout_width="358dp"
+            android:layout_height="467dp"
+            android:dividerPadding="2dp"
+            android:scrollbars="vertical"
+            android:showDividers="middle|beginning|end|none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvOperacoes">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btCadastrarOp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="Cadastrar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etAtivo" />
+
+        <Button
+            android:id="@+id/btAtualizarOp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            android:text="Atualizar"
+            app:layout_constraintEnd_toStartOf="@+id/btExcluirOp"
+            app:layout_constraintHorizontal_bias="0.027"
+            app:layout_constraintStart_toEndOf="@+id/btCadastrarOp"
+            app:layout_constraintTop_toBottomOf="@+id/etQuantidade" />
+
+        <Button
+            android:id="@+id/btExcluirOp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="Excluir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etData" />
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="29dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:text="ID"
+            android:textAlignment="center"
+            android:textColor="#FFC107"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewApp2" />
+
+        <EditText
+            android:id="@+id/etAtivo"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="text"
+            android:shadowColor="#FFC107"
+            android:text="Ativo"
+            android:textAlignment="center"
+            android:textColor="#FFC107"
+            android:textSize="14dp"
+            app:layout_constraintStart_toEndOf="@+id/tvId"
+            app:layout_constraintTop_toBottomOf="@+id/textViewApp2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
