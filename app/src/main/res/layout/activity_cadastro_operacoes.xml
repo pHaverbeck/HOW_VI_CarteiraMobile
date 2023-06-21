@@ -22,6 +22,7 @@
             android:layout_marginTop="28dp"
             android:ems="10"
             android:inputType="number"
+            android:selectAllOnFocus="true"
             android:shadowColor="#FFC107"
             android:text="Quantidade"
             android:textAlignment="center"
@@ -38,6 +39,7 @@
             android:layout_marginTop="28dp"
             android:ems="10"
             android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
             android:shadowColor="#FFC107"
             android:text="Valor"
             android:textAlignment="center"
@@ -54,24 +56,13 @@
             android:layout_marginTop="28dp"
             android:ems="10"
             android:inputType="date"
+            android:selectAllOnFocus="true"
             android:shadowColor="#FFC107"
             android:text="Data"
             android:textAlignment="center"
             android:textColor="#FFC107"
             android:textSize="14dp"
             app:layout_constraintStart_toEndOf="@+id/etValor"
-            app:layout_constraintTop_toBottomOf="@+id/textViewApp2" />
-
-        <TextView
-            android:id="@+id/tvOperacoes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="164dp"
-            android:text="Operações"
-            android:textColor="#FFC107"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewApp2" />
 
         <TextView
@@ -97,8 +88,7 @@
             android:showDividers="middle|beginning|end|none"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvOperacoes">
+            app:layout_constraintStart_toStartOf="parent">
 
             <TableRow
                 android:layout_width="match_parent"
@@ -169,6 +159,7 @@
             android:layout_marginTop="28dp"
             android:ems="10"
             android:inputType="text"
+            android:selectAllOnFocus="true"
             android:shadowColor="#FFC107"
             android:text="Ativo"
             android:textAlignment="center"
@@ -176,6 +167,19 @@
             android:textSize="14dp"
             app:layout_constraintStart_toEndOf="@+id/tvId"
             app:layout_constraintTop_toBottomOf="@+id/textViewApp2" />
+
+        <TextView
+            android:id="@+id/tvOperacoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="TextView"
+            android:textColor="#FFC107"
+            android:textColorHighlight="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btAtualizarOp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
