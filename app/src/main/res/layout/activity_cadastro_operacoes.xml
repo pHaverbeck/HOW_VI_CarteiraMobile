@@ -14,6 +14,36 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="-16dp">
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Valor:"
+            android:textColor="#FFC107"
+            app:layout_constraintBottom_toTopOf="@+id/etValor"
+            app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:text="Data:"
+            android:textColor="#FFC107"
+            app:layout_constraintBottom_toTopOf="@+id/etData"
+            app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:text="Quantidade:"
+            android:textColor="#FFC107"
+            app:layout_constraintBottom_toTopOf="@+id/etQuantidade"
+            app:layout_constraintStart_toEndOf="@+id/textView" />
+
         <EditText
             android:id="@+id/etQuantidade"
             android:layout_width="80dp"
@@ -24,9 +54,9 @@
             android:inputType="number"
             android:selectAllOnFocus="true"
             android:shadowColor="#FFC107"
-            android:text="Quantidade"
+            android:text="ex: 100"
             android:textAlignment="center"
-            android:textColor="#FFC107"
+            android:textColor="#00BCD4"
             android:textSize="14dp"
             app:layout_constraintStart_toEndOf="@+id/etAtivo"
             app:layout_constraintTop_toBottomOf="@+id/textViewApp2" />
@@ -41,9 +71,9 @@
             android:inputType="numberDecimal"
             android:selectAllOnFocus="true"
             android:shadowColor="#FFC107"
-            android:text="Valor"
+            android:text="ex: 1234,56"
             android:textAlignment="center"
-            android:textColor="#FFC107"
+            android:textColor="#00BCD4"
             android:textSize="14dp"
             app:layout_constraintStart_toEndOf="@+id/etQuantidade"
             app:layout_constraintTop_toBottomOf="@+id/textViewApp2" />
@@ -58,9 +88,9 @@
             android:inputType="date"
             android:selectAllOnFocus="true"
             android:shadowColor="#FFC107"
-            android:text="Data"
+            android:text="ex: 15/01/2023"
             android:textAlignment="center"
-            android:textColor="#FFC107"
+            android:textColor="#00BCD4"
             android:textSize="14dp"
             app:layout_constraintStart_toEndOf="@+id/etValor"
             app:layout_constraintTop_toBottomOf="@+id/textViewApp2" />
@@ -161,9 +191,9 @@
             android:inputType="text"
             android:selectAllOnFocus="true"
             android:shadowColor="#FFC107"
-            android:text="Ativo"
+            android:text="ex: ABCD3"
             android:textAlignment="center"
-            android:textColor="#FFC107"
+            android:textColor="#00BCD4"
             android:textSize="14dp"
             app:layout_constraintStart_toEndOf="@+id/tvId"
             app:layout_constraintTop_toBottomOf="@+id/textViewApp2" />
@@ -173,13 +203,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
-            android:text="TextView"
+            android:text="Operações"
             android:textColor="#FFC107"
             android:textColorHighlight="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/tabelaOperacoes"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btAtualizarOp" />
+            app:layout_constraintTop_toBottomOf="@+id/btAtualizarOp"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:text="Ativo:"
+            android:textColor="#FFC107"
+            app:layout_constraintBottom_toTopOf="@+id/etAtivo"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
