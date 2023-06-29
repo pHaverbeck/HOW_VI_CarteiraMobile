@@ -19,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);         // Arquivo de Layout -> Mostra o conteúdo da activity
 
-
+/*
         BancoDeDados db = new BancoDeDados(this, "db_usuarios", null, 1);
         String dbUsuarios = ((EditText)findViewById(R.id.etNomeUsuario)).getText().toString();
         db.criarUsuario(dbUsuarios);
-
+*/
 
 
 
